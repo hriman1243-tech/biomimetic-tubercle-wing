@@ -462,7 +462,7 @@ with tab_3d:
                 camera=dict(eye=dict(x=-1.45, y=-1.55, z=0.85)),
             ),
         )
-       st.plotly_chart()
+                st.plotly_chart(fig_3d)
 
     with col_span:
         st.subheader("Live Spanwise Circulation & Sectional Lift")
