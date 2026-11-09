@@ -462,7 +462,7 @@ with tab_3d:
                 camera=dict(eye=dict(x=-1.45, y=-1.55, z=0.85)),
             ),
         )
-        st.plotly_chart(fig_3d, use_container_width=True)
+       st.plotly_chart()
 
     with col_span:
         st.subheader("Live Spanwise Circulation & Sectional Lift")
@@ -539,7 +539,7 @@ with tab_3d:
             margin=dict(l=15, r=15, t=45, b=15),
             legend=dict(orientation="h", yanchor="bottom", y=1.06, xanchor="center", x=0.5),
         )
-        st.plotly_chart(fig_span, use_container_width=True)
+        st.plotly_chart(fig_span)
 
 # ==============================================================================
 # TAB 2: VERIFIED MANUSCRIPT BENCHMARKS (POLAR & GRID CONVERGENCE)
@@ -670,7 +670,7 @@ with tab_verified:
             height=480,
             legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="center", x=0.5),
         )
-        st.plotly_chart(fig_polar, use_container_width=True)
+        st.plotly_chart(fig_polar)
 
     with col_conv:
         fig_conv = go.Figure()
@@ -720,7 +720,7 @@ with tab_verified:
             height=480,
             legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="center", x=0.5),
         )
-        st.plotly_chart(fig_conv, use_container_width=True)
+        st.plotly_chart(fig_conv)
 
     st.markdown("#### Verified Monotonic Grid Refinement Table (α = 18°)")
     conv_gains = ((CL_CONV_TUB - CL_CONV_BASE) / CL_CONV_BASE) * 100.0
