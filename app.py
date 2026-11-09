@@ -820,3 +820,17 @@ with tab_about:
                     "Combining biomimetic aerodynamic efficiency with flax-fiber and bio-epoxy composite matrices reduces "
                     "both operational fuel burn and manufacturing carbon footprints."
                 )
+
+
+
+with st.container(border=True):
+            st.subheader("🔬 Conclusions & Future Research Frontier")
+            st.markdown(
+                """
+                **Primary Conclusion:**  
+                Coupled 3D Lifting-Line Theory successfully isolates the mean spanwise circulation modification caused by biomimetic leading-edge tubercles, validating a theoretical +4.43% lift baseline gain at post-stall angles (α = 18°).
+
+                **The Next Frontier (Unsteady Viscous CFD):**  
+                While LLT captures bound-vortex circulation, it cannot resolve viscous flow separation. To fully capture the bi-periodic, counter-rotating vortex pairs that actively re-energize the boundary layer and delay stall by up to 40%, the next research phase will utilize **Unsteady Viscous CFD** (URANS / LES) to model transient vortex shedding dynamics.
+                """
+            )
