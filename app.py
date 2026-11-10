@@ -20,7 +20,22 @@ st.markdown(
     .block-container {
         padding-top: 3.5rem;
         padding-bottom: 2rem;
-    }
+    /* Global mobile responsiveness tweaks */
+        @media (max-width: 768px) {
+            .block-container {
+                padding-left: 0.8rem !important;
+                padding-right: 0.8rem !important;
+                padding-top: 1rem !important;
+            }
+            div[data-testid="stMetricValue"] {
+                font-size: 1.4rem !important;
+            }
+        }
+        /* Sleek card border styling for mobile */
+        [data-testid="stVerticalBlock"] > [data-testid="stContainer"] {
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }}
     div[data-testid="stMetric"] {
         background-color: #111827;
         border: 1px solid #1f2937;
