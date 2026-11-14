@@ -549,7 +549,7 @@ with tab_verified:
         fig_polar.add_trace(
             go.Scatter(
                 x=alpha_grid,
-                y=cl_Base_plot := cl_base_grid,
+                y=cl_base_grid,
                 mode="lines+markers",
                 name="Smooth Baseline NACA 2412",
                 line=dict(color="#94a3b8", width=2.5, dash="dash"),
@@ -667,7 +667,6 @@ with tab_about:
         with st.container(border=True):
             st.subheader("👨‍🔬 Lead Researcher")
 
-            # Automatically detects profile.jpg.jpg, profile.jpg, or original webcam filename
             img_candidates = [
                 "profile.jpg.jpg",
                 "profile.jpg",
